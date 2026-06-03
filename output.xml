@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-03T12:40:30.802084" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite\Test_case.robot">
+<test id="s1-t1" name="Login" line="6">
+<kw name="Login page">
+<msg time="2026-06-03T12:40:30.874541" level="FAIL">No keyword with name 'Login page' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" start="2026-06-03T12:40:30.873449" elapsed="0.001157">No keyword with name 'Login page' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</kw>
+<status status="FAIL" start="2026-06-03T12:40:30.872566" elapsed="0.002442">No keyword with name 'Login page' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>Login Test Case</doc>
+<status status="FAIL" start="2026-06-03T12:40:30.804703" elapsed="0.071028"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test case" id="s1" pass="0" fail="1" skip="0">Test case</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-06-03T12:40:30.871645" level="WARN">Imported resource file 'C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\User_Defined_Keywords\Login_udk.robot' is empty.</msg>
+</errors>
+</robot>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-03T12:52:51.078795" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot-Framework-Automation" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation">
+<suite id="s1-s1" name="Test Suite" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite">
+<suite id="s1-s1-s1" name="Test case" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite\Test_case.robot">
+<test id="s1-s1-s1-t1" name="Verify User Login" line="6">
+<kw name="Login_page1" owner="Login_udk">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-06-03T12:52:51.535278" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<arg>${URL}</arg>
+<arg>browser=Chrome</arg>
+<arg>options=add_argument("--ignore-certificate-errors");add_experimental_option("detach", True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-06-03T12:52:51.534383" elapsed="6.916749"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-03T12:52:58.458175" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='usernameUserInput']'.</msg>
+<msg time="2026-06-03T12:52:58.762622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-03T12:52:58.763133" level="FAIL">Element with locator '//input[@id='usernameUserInput']' not found.</msg>
+<arg>${username1}</arg>
+<arg>${users}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-06-03T12:52:58.454648" elapsed="0.319745">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-03T12:52:58.774718" elapsed="0.000215"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>${SignIn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-03T12:52:58.775063" elapsed="0.000118"/>
+</kw>
+<doc>This keyword will perform login action on the application</doc>
+<status status="FAIL" start="2026-06-03T12:52:51.532682" elapsed="7.242626">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+</kw>
+<doc>This test case will verify the login functionality of the application</doc>
+<status status="FAIL" start="2026-06-03T12:52:51.527224" elapsed="7.248616">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+</test>
+<doc>Login Test Case</doc>
+<status status="FAIL" start="2026-06-03T12:52:51.130292" elapsed="7.656766"/>
+</suite>
+<status status="FAIL" start="2026-06-03T12:52:51.121561" elapsed="7.669298"/>
+</suite>
+<status status="FAIL" start="2026-06-03T12:52:51.084035" elapsed="7.710668"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot-Framework-Automation" id="s1" pass="0" fail="1" skip="0">Robot-Framework-Automation</stat>
+<stat name="Test Suite" id="s1-s1" pass="0" fail="1" skip="0">Robot-Framework-Automation.Test Suite</stat>
+<stat name="Test case" id="s1-s1-s1" pass="0" fail="1" skip="0">Robot-Framework-Automation.Test Suite.Test case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
