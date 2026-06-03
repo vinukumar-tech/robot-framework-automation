@@ -1,76 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-03T13:30:18.238713" rpa="false" schemaversion="5">
-<suite id="s1" name="Test case" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite\Test_case.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.5 on darwin)" generated="2026-06-03T15:50:45.032620" rpa="false" schemaversion="5">
+<suite id="s1" name="Test case" source="/Users/vinu/Documents/WorkSpace/robot-framework/robot-framework-automation/Test_Suite/Test_case.robot">
 <test id="s1-t1" name="Verify User Login" line="6">
 <kw name="Login_page1" owner="Login_udk">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-03T13:30:18.538544" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2026-06-03T15:50:45.178868" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=Chrome</arg>
 <arg>options=add_argument("--ignore-certificate-errors");add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-03T13:30:18.538321" elapsed="6.152364"/>
+<status status="PASS" start="2026-06-03T15:50:45.178707" elapsed="8.613100"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-03T13:30:24.692064" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='username']'.</msg>
+<msg time="2026-06-03T15:50:53.798692" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='username']'.</msg>
 <arg>${username}</arg>
 <arg>${users}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-03T13:30:24.691451" elapsed="0.124698"/>
+<status status="PASS" start="2026-06-03T15:50:53.796261" elapsed="0.128581"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-03T13:30:24.817702" level="INFO">Typing text 'Learning@830$3mK2' into text field '//input[@id='password']'.</msg>
+<msg time="2026-06-03T15:50:53.925132" level="INFO">Typing text 'Learning@830$3mK2' into text field '//input[@id='password']'.</msg>
 <arg>${password}</arg>
 <arg>${pwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-03T13:30:24.816559" elapsed="0.124485"/>
+<status status="PASS" start="2026-06-03T15:50:53.924971" elapsed="0.047804"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-06-03T13:30:24.941790" level="INFO">Clicking element 'xpath=//select[@class='form-control']'.</msg>
+<msg time="2026-06-03T15:50:53.973113" level="INFO">Clicking element 'xpath=//select[@class='form-control']'.</msg>
 <arg>${dropdown}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-06-03T13:30:24.941222" elapsed="0.125551"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2026-06-03T13:30:25.067888" level="INFO">Selecting options from selection list 'xpath=//select[@class='form-control']' by value teacher.</msg>
-<msg time="2026-06-03T13:30:25.426218" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-03T13:30:25.426410" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-</msg>
-<arg>${dropdown}</arg>
-<arg>teacher</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="FAIL" start="2026-06-03T13:30:25.067102" elapsed="0.370440">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-</status>
+<status status="PASS" start="2026-06-03T15:50:53.972944" elapsed="0.081259"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-06-03T15:50:54.054663" level="INFO">Clicking element '//input[@type="checkbox"]'.</msg>
 <arg>${Terms and conditions}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-06-03T13:30:25.437751" elapsed="0.000026"/>
+<status status="PASS" start="2026-06-03T15:50:54.054424" elapsed="0.055240"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-06-03T15:50:54.109936" level="INFO">Clicking button '//input[@name="signin"]'.</msg>
 <arg>${SignIn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-06-03T13:30:25.437845" elapsed="0.000015"/>
+<status status="PASS" start="2026-06-03T15:50:54.109789" elapsed="0.043298"/>
 </kw>
 <doc>This keyword will perform login action on the application</doc>
-<status status="FAIL" start="2026-06-03T13:30:18.536935" elapsed="6.901025">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-</status>
+<status status="PASS" start="2026-06-03T15:50:45.178232" elapsed="8.974979"/>
 </kw>
 <doc>This test case will verify the login functionality of the application</doc>
-<status status="FAIL" start="2026-06-03T13:30:18.536054" elapsed="6.902202">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-</status>
+<status status="PASS" start="2026-06-03T15:50:45.177860" elapsed="8.975960"/>
 </test>
 <doc>Login Test Case</doc>
-<status status="FAIL" start="2026-06-03T13:30:18.241207" elapsed="7.197752"/>
+<status status="PASS" start="2026-06-03T15:50:45.033291" elapsed="9.121069"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Test case" id="s1" pass="0" fail="1" skip="0">Test case</stat>
+<stat name="Test case" id="s1" pass="1" fail="0" skip="0">Test case</stat>
 </suite>
 </statistics>
 <errors>
