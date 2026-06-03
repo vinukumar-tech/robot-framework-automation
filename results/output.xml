@@ -1,50 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.2 (Python 3.14.5 on win32)" generated="2026-06-03T12:52:51.078795" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.2 (Python 3.14.4 on win32)" generated="2026-06-03T13:28:57.248434" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot-Framework-Automation" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation">
 <suite id="s1-s1" name="Test Suite" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite">
 <suite id="s1-s1-s1" name="Test case" source="C:\Users\kumarvu\OneDrive - Tecnotree\Documents\robot-framework-automation\robot-framework-automation\Test_Suite\Test_case.robot">
 <test id="s1-s1-s1-t1" name="Verify User Login" line="6">
 <kw name="Login_page1" owner="Login_udk">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-06-03T12:52:51.535278" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
+<msg time="2026-06-03T13:28:57.551610" level="INFO">Opening browser 'Chrome' to base url 'https://rahulshettyacademy.com/loginpagePractise/'.</msg>
 <arg>${URL}</arg>
 <arg>browser=Chrome</arg>
 <arg>options=add_argument("--ignore-certificate-errors");add_experimental_option("detach", True)</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-06-03T12:52:51.534383" elapsed="6.916749"/>
+<status status="PASS" start="2026-06-03T13:28:57.551099" elapsed="7.560347"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-06-03T12:52:58.458175" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='usernameUserInput']'.</msg>
-<msg time="2026-06-03T12:52:58.762622" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2026-06-03T12:52:58.763133" level="FAIL">Element with locator '//input[@id='usernameUserInput']' not found.</msg>
-<arg>${username1}</arg>
+<msg time="2026-06-03T13:29:05.113051" level="INFO">Typing text 'rahulshettyacademy' into text field '//input[@id='username']'.</msg>
+<arg>${username}</arg>
 <arg>${users}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="FAIL" start="2026-06-03T12:52:58.454648" elapsed="0.319745">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+<status status="PASS" start="2026-06-03T13:29:05.112018" elapsed="0.145833"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-06-03T13:29:05.259245" level="INFO">Typing text 'Learning@830$3mK2' into text field '//input[@id='password']'.</msg>
 <arg>${password}</arg>
 <arg>${pwd}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-06-03T12:52:58.774718" elapsed="0.000215"/>
+<status status="PASS" start="2026-06-03T13:29:05.258601" elapsed="0.102141"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-06-03T13:29:05.361551" level="INFO">Selecting options from selection list 'xpath=//select[@class='form-control']' by value teacher.</msg>
+<msg time="2026-06-03T13:29:05.704502" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-06-03T13:29:05.704948" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+</msg>
+<arg>${dropdown}</arg>
+<arg>teacher</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="FAIL" start="2026-06-03T13:29:05.360978" elapsed="0.350985">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${Terms and conditions}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-06-03T13:29:05.712216" elapsed="0.000233"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
 <arg>${SignIn}</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2026-06-03T12:52:58.775063" elapsed="0.000118"/>
+<status status="NOT RUN" start="2026-06-03T13:29:05.712578" elapsed="0.000140"/>
 </kw>
 <doc>This keyword will perform login action on the application</doc>
-<status status="FAIL" start="2026-06-03T12:52:51.532682" elapsed="7.242626">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+<status status="FAIL" start="2026-06-03T13:28:57.549409" elapsed="8.163446">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+</status>
 </kw>
 <doc>This test case will verify the login functionality of the application</doc>
-<status status="FAIL" start="2026-06-03T12:52:51.527224" elapsed="7.248616">Element with locator '//input[@id='usernameUserInput']' not found.</status>
+<status status="FAIL" start="2026-06-03T13:28:57.545691" elapsed="8.167874">NoSuchElementException: Message: Cannot locate option with value: teacher; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+</status>
 </test>
 <doc>Login Test Case</doc>
-<status status="FAIL" start="2026-06-03T12:52:51.130292" elapsed="7.656766"/>
+<status status="FAIL" start="2026-06-03T13:28:57.294630" elapsed="8.445896"/>
 </suite>
-<status status="FAIL" start="2026-06-03T12:52:51.121561" elapsed="7.669298"/>
+<status status="FAIL" start="2026-06-03T13:28:57.288073" elapsed="8.466226"/>
 </suite>
-<status status="FAIL" start="2026-06-03T12:52:51.084035" elapsed="7.710668"/>
+<status status="FAIL" start="2026-06-03T13:28:57.256896" elapsed="8.531832"/>
 </suite>
 <statistics>
 <total>
